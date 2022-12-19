@@ -1,8 +1,9 @@
-@use "sass:map";
-@use "colors" as *;
-@use "typography" as *;
-@use "sizes" as *;
+@use 'sass:map';
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'sizes' as *;
 
+// Con esta funcion podemos obtener los colores creados en nuestro colors partial
 @function clr($color, $shade) {
   @if map.has-key($colors, $color, $shade) {
     @return map.get($colors, $color, $shade);
@@ -11,6 +12,7 @@
   }
 }
 
+// Funcion creada para colocar font size personalizadas en cada proyecto.
 @function fs($font-size) {
   @if map.has-key($font-sizes, $font-size) {
     @return map.get($font-sizes, $font-size);
@@ -19,6 +21,7 @@
   }
 }
 
+// Function para obtener los diferentes sizes personalizados en cada proyectos.
 @function size($size) {
   @if map.has-key($sizes, $size) {
     @return map.get($sizes, $size);

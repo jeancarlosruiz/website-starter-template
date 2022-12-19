@@ -1,10 +1,14 @@
-@use "sass:meta";
-@use "sass:math";
-@use "sass:map";
-@use "breakpoints" as *;
+@use 'sass:meta';
+@use 'sass:math';
+@use 'sass:map';
+@use 'breakpoints' as *;
+
+// Con este mixin podremos crear media queries en nuestros proyectos.
 
 @mixin mq($size) {
+  // Si se encuentra dentro del media query entonces....
   @if map.has-key($breakpoints, $size) {
+    // ...Creara un media q. con el breakpoint dado....
     $breakpoint: map-get($breakpoints, $size);
     @media screen and (min-width: $breakpoint) {
       @content;
@@ -17,6 +21,8 @@
         @content;
       }
     }
+
+    // Cuando el dato dado sea diferente a lo que tenemos pues dara error con mensaje de que la palabra dada no esta en el breakpoint.
   } @else {
     @error 'the keyword #{$size} is not in the $breakpoints map';
   }

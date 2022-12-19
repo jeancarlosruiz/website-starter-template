@@ -1,4 +1,6 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
+
+// use an @each loop to create utility classes based on the font sizes map in our typography
 
 @each $size-name, $size-value in $font-sizes {
   .fs-#{$size-name} {

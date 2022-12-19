@@ -1,6 +1,8 @@
-@forward "breakpoints";
-@forward "colors";
-@forward "functions";
-@forward "mixins";
-@forward "sizes";
-@forward "typography";
+// The _index.scss in each folder has an @forward for every file in that folder
+
+@forward 'breakpoints';
+@forward 'colors';
+@forward 'functions';
+@forward 'mixins';
+@forward 'sizes';
+@forward 'typography';

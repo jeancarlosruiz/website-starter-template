@@ -1,4 +1,10 @@
-$ff-sans: "Open Sans", sans-serif;
+// Diferentes font-sizes que tendran lugar en el folder utilities para crear clases que podremos usar dentro de nuestro html.
+
+// Font-family
+
+$ff-sans: 'Open Sans', sans-serif;
+
+//Font-sizes
 
 $font-sizes: (
   900: 3.75rem,
@@ -7,6 +13,8 @@ $font-sizes: (
   500: 1.3125rem,
   400: 1.125rem,
 );
+
+//Font-weights
 
 $fw-400: 400;
 $fw-700: 700;

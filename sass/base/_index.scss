@@ -1,2 +1,4 @@
-@forward "reset";
-@forward "general";
+// The _index.scss in each folder has an @forward for every file in that folder
+
+@forward 'reset';
+@forward 'general';

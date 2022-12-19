@@ -1,5 +1,6 @@
-@use "base";
-@use "components";
-@use "layout";
-@use "utilities";
-@use "vendor";
+// The main.scss has a @use for every folder, except for abstracts/.
+
+@use 'base';
+@use 'components';
+@use 'layout';
+@use 'utilities';
