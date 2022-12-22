@@ -1,9 +1,13 @@
 @use '../abstracts' as *;
 
 // use an @each loop to create utility classes based on the font sizes map in our typography
-
 @each $size-name, $size-value in $font-sizes {
   .fs-#{$size-name} {
     font-size: $size-value;
+
+    // Si el fs es mas grande que 600 (variable) pues su line-height sera de 1.1
+    @if $size-name > 600 {
+      line-height: 1.1;
+    }
   }
 }
