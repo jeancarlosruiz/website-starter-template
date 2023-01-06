@@ -2,14 +2,10 @@
 
 // Esto puede ser de mucha ayuda a la hora de crear botones y navegations.
 
-.flex-group {
+.flex-group-1 {
   display: flex;
   flex-wrap: wrap;
   column-gap: var(--flex-column-gap, $flex-group-gap);
   row-gap: var(--flex-row-gap, calc($flex-group-gap) / 2);
   width: fit-content;
-}
-
-.flex-group.mx-auto {
-  justify-content: center;
 }

@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.hamburger-btn {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: size(30);
+  height: size(20);
+  margin-inline-end: size(16);
+  z-index: 3;
+
+  @include mq(medium) {
+    display: none;
+  }
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: clr(neutral, 900);
+  border-radius: size(10);
+  transition: all 275ms ease-in;
+}
+
+.hamburger-btn.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translateY(12px);
+}
+
+.hamburger-btn.active .bar:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+.hamburger-btn.active .bar:nth-child(3) {
+  transform: rotate(45deg) translateY(-12px);
+}
