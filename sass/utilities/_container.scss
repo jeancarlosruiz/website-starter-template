@@ -1,13 +1,15 @@
 @use '../abstracts/' as *;
 
 .container {
-  --padding: #{$container-inline-padding};
-  --max-width: #{$container-max-width};
+  width: calc(100% - #{size(32)});
+  max-width: $container-max-width;
 
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-  margin-inline: auto;
+  @include mq(medium) {
+    width: calc(100% - #{size(80)});
+  }
 }
 
 .container[data-type='wide'] {
-  --max-width: #{$container-max-width-wide};
+  width: 100%;
+  max-width: $container-max-width-wide;
 }

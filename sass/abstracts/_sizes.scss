@@ -120,14 +120,8 @@ $sizes: (
   200: 12.5rem,
 );
 
-$section-padding: clamp(3rem, 10vh, 7rem);
-$hero-padding: clamp(15rem, 15vh, 20rem);
-
-$card-body-padding: clamp(2rem, 2.5vh, 5rem);
-
-$container-inline-padding: 1rem;
-$container-max-width: 60rem;
-$container-max-width-wide: 75rem;
+$container-max-width: 69.375rem;
+$container-max-width-wide: 90rem;
 
 $grid-gap: 1.5rem;
 $flex-group-gap: 1rem;
