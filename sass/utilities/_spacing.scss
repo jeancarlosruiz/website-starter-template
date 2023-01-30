@@ -4,10 +4,6 @@
   margin-inline: auto;
 }
 
-.section {
-  padding-block: $section-padding;
-}
-
 // use an @each loop to create utility classes based on sizes in abstracts
 
 @each $size-name, $size-value in $sizes {
