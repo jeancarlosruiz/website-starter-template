@@ -1,0 +1,11 @@
+// Only Screen Readers
+// Source: https://www.accessibility-developer-guide.com/examples/hiding-elements/visually/
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

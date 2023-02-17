@@ -1,0 +1,5 @@
+@use '../abstracts' as *;
+
+.rounded {
+  border-radius: size(24);
+}
